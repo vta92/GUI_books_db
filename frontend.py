@@ -7,6 +7,7 @@ View records, Search an entry, Add entry, Update Entry, Delete, Close
 Tkinter frontend with sqlite3 db backend
 """
 from tkinter import *
+import backend
 
 root = Tk()
 
@@ -30,12 +31,12 @@ entry_ISBN = Entry(root, textvariable=ISBN_text)
 listbox = Listbox(root, height =6, width = 35)
 sb1 = Scrollbar(root)
 
-b1 = Button(root, text='Query', width = 12)
-b2 = Button(root, text='Search', width = 12)
-b3 = Button(root, text='Add', width = 12)
-b4 = Button(root, text='Update', width = 12)
-b5 = Button(root, text='Delete', width = 12)
-b6 = Button(root, text='Close', width = 12)
+b_view = Button(root, text='View', width = 12)
+b_search = Button(root, text='Search', width = 12)
+b_add = Button(root, text='Add', width = 12)
+b_update = Button(root, text='Update', width = 12)
+b_delete = Button(root, text='Delete', width = 12)
+b_close = Button(root, text='Close', width = 12)
 
 
 
@@ -58,11 +59,11 @@ entry_ISBN.grid(row=1,column=3)
 listbox.grid(row=2,column=0,rowspan=6,columnspan=2)
 sb1.grid(row=2,column=2,rowspan=6)
 
-b1.grid(row=2, column=3)
-b2.grid(row=4, column=3)
-b3.grid(row=5, column=3)
-b4.grid(row=6, column=3)
-b5.grid(row=7, column=3)
-b6.grid(row=8, column=3)
+b_view.grid(row=2, column=3)
+b_search.grid(row=4, column=3)
+b_add.grid(row=5, column=3)
+b_update.grid(row=6, column=3)
+b_delete.grid(row=7, column=3)
+b_close.grid(row=8, column=3)
 
 root.mainloop()
