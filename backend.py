@@ -52,11 +52,14 @@ def delete(id):
     conn.commit()
     conn.close()
 
-#connect()
-#insertion("A Game of Thrones", "George R. R. Martin",year=2011, isbn=553593714)
+connect()
+view()
+
+
+#insertion("A Game of Thrones", "George R. R. Martin",2011, 553593714)
 #print(view())
 #print(search(year="2011"))
-#delete(1)
-#delete(2)
-#update(10,"The Journey to Greatness","vinh", 1992, 1234567891)
-#print(search(author="vinh"))
+#delete(16)
+#delete(17)
+#update(9,"The Journey","Vinh Ta", 1992, 12345)
+#print(search(author="Vinh Ta"))
